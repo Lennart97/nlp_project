@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
+\beamer@sectionintoc {2}{Goal}{4}{0}{2}
+\beamer@sectionintoc {3}{Idea}{5}{0}{3}
+\beamer@sectionintoc {4}{Implementation}{6}{0}{4}
+\beamer@sectionintoc {5}{Expected Results}{7}{0}{5}
+\beamer@sectionintoc {6}{Questions}{8}{0}{6}

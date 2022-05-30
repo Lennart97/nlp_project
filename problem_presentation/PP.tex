@@ -1,0 +1,154 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{Simple}
+
+\usepackage{hyperref}
+\usepackage{graphicx} % Allows including images
+%\usepackage[export]{adjustbox} %throws error
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\setbeamersize{text margin left=12mm, text margin right=12mm} 
+
+\addtobeamertemplate{footline}{%
+  \setlength\unitlength{1ex}%
+  \begin{picture}(0,0) 
+    % \put{} defines the position of the frame
+    \put(134,83.6){\makebox(0,0)[bl]{
+    \includegraphics[scale=0.4]{images/uni_logo_weiss.eps}
+    }}%
+  \end{picture}%
+}{}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+% The title
+\title[Determination of political views]{Determination of political views}
+\subtitle{using NLP on social media postings}
+
+\author[Lennart Hallenberger, Florian Siepe]{Lennart Hallenberger, Florian Siepe}
+\institute[] % Your institution may be shorthand to save space
+{
+    % Your institution for the title page
+    Department Mathematics and Computer Science \\
+    Philipps University of Marburg
+    \vskip 3pt
+}
+\date{\today} % Date, can be changed to a custom date
+
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{frame}[plain]
+    % Print the title page as the first slide
+    \titlepage
+    \begin{figure}[h]
+        \includegraphics[scale=0.5]{images/uni_logo_schwarz.eps}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Outline}
+    % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+    \tableofcontents
+\end{frame}
+%------------------------------------------------
+\section{Motivation}
+%------------------------------------------------
+
+\begin{frame}{Motivation}
+    \begin{itemize}
+        \item Lack of pre-classified data of political viewpoints
+        \begin{itemize}
+            \item and their tendency to be outdated
+        \end{itemize}
+        \item Rising importance of social media for politicians
+        \item Gaining insights on political topics and their distribution
+        \item Improving election projections
+    \end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section{Goal}
+%------------------------------------------------
+
+\begin{frame}{Goal}
+
+    \begin{block}{Main objective}
+        Classify users based on their social media postings to match them with a political party.
+    \end{block}
+    
+    \begin{block}{Verification}
+        Verify precision and recall of our approach.
+    \end{block}
+\end{frame}
+
+%------------------------------------------------
+\section{Idea}
+%------------------------------------------------
+
+\begin{frame}{Idea}
+
+    \begin{block}{Concept}
+        Creating a reusable pipeline instead of a static dataset.
+    \end{block}
+
+    \begin{block}{Approach}
+        \begin{itemize}
+            \item Use posts from known politicians with their political party as label
+            \item Extract relevant features which distinguish the labels
+        \end{itemize}
+    \end{block}
+    
+\end{frame}
+
+%------------------------------------------------
+\section{Implementation}
+%------------------------------------------------
+
+\begin{frame}{Implementation}
+    \begin{example}
+        \begin{itemize}
+            \item Create an equal set of republican and democratic politicians from the US
+            \item Gather an equal amount of current tweets 
+            \item Classify tweets with the political party of their author
+            \item Extract distinguishing features between labels
+            \item Apply model to politicians who were not part of the training data
+            \item Calculate precision and recall to verify approach
+        \end{itemize}
+    \end{example}
+\end{frame}
+
+%------------------------------------------------
+\section{Expected Results}
+%------------------------------------------------
+
+\begin{frame}{Expected Results}
+    \begin{block}{Expectation}
+        We expect to find at least some features of the used language that will differ between the members of opposing political parties. 
+    \end{block}
+    
+    \begin{alertblock}{Challenges and alternative}
+        \begin{itemize}
+            \item Features of daily tweets might not be significant enough to differentiate.
+            \item A second approach would be to limit the tweets to a single political topic.
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
+
+%------------------------------------------------
+\section{Questions}
+%------------------------------------------------
+
+\begin{frame}{Questions}
+    \Huge{\centerline{Thank you for your attention!}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
