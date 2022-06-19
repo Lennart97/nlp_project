@@ -1,0 +1,7 @@
+gensim
+jupyter
+nltk
+numpy
+pandas
+pyLDAvis
+spacy
