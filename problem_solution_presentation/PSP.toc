@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Goal (revisited)}{3}{0}{1}
+\beamer@sectionintoc {2}{Overview of the dataset}{5}{0}{2}
+\beamer@sectionintoc {3}{Benchmarks}{8}{0}{3}
+\beamer@sectionintoc {4}{Summary \& Outlook}{16}{0}{4}

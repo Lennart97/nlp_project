@@ -1,0 +1,16 @@
+\beamer@slide {fig:pipeline}{7}
+\beamer@slide {fig:perplexity}{9}
+\beamer@slide {fig:dem_dem_diff_130}{10}
+\beamer@slide {fig:dem_rep_diff_130}{10}
+\beamer@slide {fig:rec}{11}
+\beamer@slide {fig:pre}{11}
+\beamer@slide {fig:conf}{12}
+\beamer@slide {fig:f1}{12}
+\beamer@slide {fig:mlp}{13}
+\beamer@slide {fig:gnb}{13}
+\beamer@slide {fig:lvm}{14}
+\beamer@slide {fig:lvm_summary_130}{14}
+\beamer@slide {fig:dem_wordcloud_full}{15}
+\beamer@slide {fig:rep_wordcloud_full}{15}
+\beamer@slide {fig:summary_lvm}{17}
+\beamer@slide {fig:summary_dem_rep_diff_15}{17}
